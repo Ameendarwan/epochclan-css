@@ -1,0 +1,103 @@
+/* Define color variables */
+:root {
+    --primary-text-color: #313131;
+    --secondary-text-color: #7e7f80;
+    --placeholder-text-color: #7f7f7f;
+    --background-color: #f1f3f5;
+    --border-color: #e4e5e7;
+    --button-border-color: #eaeced;
+  }
+  
+  body {
+    font-family: "Schibsted Grotesk", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card-container {
+    background-color: var(--background-color);
+    padding: 20px;
+    max-width: 400px;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 50px;
+  }
+  
+  /* Text Styles */
+  .top-heading {
+    color: var(--primary-text-color);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  
+  .bold-heading {
+    color: var(--primary-text-color);
+    font-weight: bold;
+  }
+  
+  .sub-heading {
+    color: var(--secondary-text-color);
+    font-size: 14px;
+  }
+  
+  .placeholder-text {
+    color: var(--placeholder-text-color);
+    font-size: 14px;
+  }
+  
+  /* Button Styles */
+  .read-more-container {
+    position: relative;
+  }
+  
+  .read-more-button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--button-border-color);
+    border-radius: 40px;
+    padding: 14px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+  }
+  
+  .button-icon-container {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: 1px solid var(--button-border-color);
+    width: 45px;
+    height: 95%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: none;
+    transform: rotate(45deg);
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
